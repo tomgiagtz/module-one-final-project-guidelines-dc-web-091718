@@ -17,13 +17,21 @@ GEM
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
+    domain_name (0.5.20180417)
+      unf (>= 0.0.5, < 1.0.0)
     ffi (1.9.25)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
     method_source (0.9.0)
+    mime-types (3.2.2)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2018.0812)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     mustermann (1.0.3)
+    netrc (0.11.0)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
     pry (0.11.3)
@@ -33,6 +41,10 @@ GEM
     rack-protection (2.0.4)
       rack
     require_all (2.0.0)
+    rest-client (2.0.2)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
     rubyzip (1.2.2)
     selenium-webdriver (3.14.0)
       childprocess (~> 0.5)
@@ -50,6 +62,9 @@ GEM
     tilt (2.0.8)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.5)
     watir (6.14.0)
       selenium-webdriver (~> 3.4, >= 3.4.1)
 
@@ -60,6 +75,7 @@ DEPENDENCIES
   nokogiri
   pry
   require_all
+  rest-client
   sinatra-activerecord
   sqlite3
   watir
